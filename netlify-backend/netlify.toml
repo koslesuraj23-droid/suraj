@@ -1,0 +1,26 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/razorpay-webhook"
+  to = "/.netlify/functions/razorpay-webhook"
+  status = 200
+
+[[redirects]]
+  from = "/api/download/*"
+  to = "/.netlify/functions/download"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/seed"
+  to = "/.netlify/functions/seed-assets"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/retry-email"
+  to = "/.netlify/functions/retry-email"
+  status = 200

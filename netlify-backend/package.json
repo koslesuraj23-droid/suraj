@@ -1,0 +1,19 @@
+{
+  "name": "excel-ebook-test-delivery",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "seed:help": "node scripts/seed-assets.mjs --help"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.0.0",
+    "resend": "^6.0.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^3.0.0"
+  }
+}

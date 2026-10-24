@@ -1,0 +1,10 @@
+node_modules/
+.netlify/
+.env
+.env.*
+!.env.example
+*.pdf
+*.docx
+private-assets/
+coverage/
+.DS_Store
